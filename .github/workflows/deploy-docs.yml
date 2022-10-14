@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install Dependecies
-      - run: yarn ci
+      - name: Install dependencies
+        run: yarn ci --legacy-peer-deps
 
       - name: Build Storybook
         run: yarn run build-storybook
